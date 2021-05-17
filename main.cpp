@@ -1,5 +1,4 @@
 #include "myapplication.h"
-using namespace genv;
 
 
 int main()

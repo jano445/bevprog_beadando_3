@@ -1,10 +1,10 @@
 #include "field.h"
-
+#include "widget.h"
 using namespace std;
 using namespace genv;
 
 field::field(int x, int y, int sx, int sy)
-:widget(x,y,sx,sy)
+    :widget(x,y,sx,sy)
 {
     player=0;
 }

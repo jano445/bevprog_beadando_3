@@ -11,7 +11,7 @@ class field : public widget
         field(int x, int y, int sx, int sy);
         virtual void draw() const;
         virtual void handle(genv::event ev);
-        virtual unsigned int getplayer();
+        virtual unsigned int getplayer(){return player;}
         virtual void resetfield();
 };
 

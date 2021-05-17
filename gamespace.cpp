@@ -14,9 +14,9 @@ gamespace::gamespace(int x, int y, int sx, int sy)
         gamemap[i%20][i/20]=b;
     }
     actualplayer = new label(240,10,125,30,"Player 1's turn");
-    winnerIndicator = new Label(240,30,125,30,"");
-    retryButton = new Button(540,20,60,30,"RESTART",[&](){
-        restartGame();
+    winnerindic = new label(240,30,125,30,"");
+    retrybutton = new button(540,20,60,30,"RESTART",[&](){
+        restart();
     });
 }
 
@@ -74,7 +74,7 @@ bool gamespace::haswon(unsigned int player)
     {
         for(int j=0;j<20;j++)
         {
-            if(gamemap[i][j]->getplayer()==player && gamemap[i+1][j]->getplayer==player() && gamemap[i+2][j]->getplayer() == player && gamemap[i+3][j]->getplayer() == player &&
+          if(gamemap[i][j]->getplayer()==player && gamemap[i+1][j]->getplayer()==player && gamemap[i+2][j]->getplayer() == player && gamemap[i+3][j]->getplayer() == player &&
                     gamemap[i+4][j]->getplayer() == player)
                     return true;
         }

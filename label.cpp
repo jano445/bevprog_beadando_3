@@ -13,7 +13,7 @@ void label::draw() const
         <<box(size_x-2, size_y-2);
     gout<<move_to(x_+2,y_+20)
         <<color(r,g,b)
-        <text(includedtext);
+        <<text(includedtext);
 }
 
 void label::handle(event ev)

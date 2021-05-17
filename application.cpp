@@ -14,6 +14,13 @@ void application::addwidget(widget* w)
 void application::run()
 {
     gout.open(xx,yy);
+    for(size_t i=0;i<widgets.size();i++)
+        {
+            widgets.at(i)->draw();
+        }
+        gout<<refresh;
+
+
     event ev;
     while(gin>>ev && ev.keycode!=key_escape)
     {

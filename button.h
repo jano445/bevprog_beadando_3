@@ -10,7 +10,7 @@ using namespace std;
 class button : public widget
 {
     string includedtext;
-    function<void()> action;
+    function<void()> actiontodo;
     bool push;
     public:
         button(int x, int y, int sx, int sy, string inputtext, function<void()> fv);

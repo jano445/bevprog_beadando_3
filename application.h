@@ -7,7 +7,6 @@
 using namespace std;
 class application
 {
-    protected:
         unsigned int xx=600;
         unsigned int yy=700;
         unsigned int focus;
